@@ -100,7 +100,9 @@ function Table(props) {
       )}
       <TableBody>
         {renderBodyRow &&
-          _.map(tableData, (data, index) => TableRow.create(renderBodyRow(data, index)))}
+          _.map(tableData, (data, index, array) =>
+            TableRow.create(renderBodyRow(data, index, array)),
+          )}
       </TableBody>
       {footerRow && <TableFooter>{TableRow.create(footerRow)}</TableFooter>}
     </ElementType>

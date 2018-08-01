@@ -33,6 +33,7 @@ const Types = () => (
       description='A table can be formatted to display complex structured data.'
       examplePath='collections/Table/Types/TableExampleStructured'
     />
+    <ShorthandExample examplePath='collections/Table/Types/TableExampleStructuredShorthand' />
   </ExampleSection>
 )
 
